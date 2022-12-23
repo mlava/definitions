@@ -1,8 +1,8 @@
 If you sometimes need to check the meaning of a word in your graph, this extension will allow you to do it.
 
-Simply select a word by double-clicking or shift-dragging over it. Then, use the keyboard shortcut ALT-SHIFT-d.
+Simply select a word by double-clicking or shift-dragging over it. Then, use the keyboard shortcut ALT-SHIFT-d or OPT-SHIFT-d on MacOS.
 
-![definitions](https://user-images.githubusercontent.com/6857790/208808882-1f76cb26-a1f9-417f-9a28-ca777caf91b0.gif)
+![definitions](https://user-images.githubusercontent.com/6857790/209282317-890554a7-a8f7-460e-99d0-085c14cbe9e0.gif)
 
 If you already have a saved definition, it will be opened in the right sidebar.
 
