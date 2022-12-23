@@ -169,7 +169,8 @@ export default {
                                         layout: 2,
                                         drag: false,
                                         timeout: false,
-                                        close: false,
+                                        close: true,
+                                        icon: '',
                                         overlay: true,
                                         displayMode: 2,
                                         id: "question",
@@ -208,6 +209,13 @@ export default {
                                                     let subst = "((" + definitionUID + "))";
                                                     let replacedString = originalString[":block/string"].replace(re, subst);
                                                     await window.roamAlphaAPI.updateBlock({ block: { uid: uid, string: replacedString, open: true } });
+                                                    instance.hide({ transitionOut: "fadeOut" }, toast, "button");
+                                                },
+                                                false,
+                                            ],
+                                            [
+                                                "<button>Close</button>",
+                                                async function (instance, toast, button, e, inputs) {
                                                     instance.hide({ transitionOut: "fadeOut" }, toast, "button");
                                                 },
                                                 false,
