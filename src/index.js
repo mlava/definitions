@@ -204,7 +204,7 @@ export default {
                                                     await window.roamAlphaAPI.ui.rightSidebar.addWindow({ window: { type: 'outline', 'block-uid': pageUID } });
                                                     
                                                     var originalString = await window.roamAlphaAPI.data.pull("[:block/string]", [":block/uid", uid]);
-                                                    console.info(uid, originalString)
+                                                    
                                                     let re = new RegExp(`\\b${word}\\b`, 'gi');
                                                     let subst = "((" + definitionUID + "))";
                                                     let replacedString = originalString[":block/string"].replace(re, subst);
