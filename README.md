@@ -1,6 +1,9 @@
 If you sometimes need to check the meaning of a word in your graph, this extension will allow you to do it.
 
-Simply select a word by double-clicking or shift-dragging over it. Then, use the keyboard shortcut ALT-SHIFT-d or OPT-SHIFT-d on MacOS.
+**NEW:**
+- compatible with Roam Research Command Palette and Hotkeys
+
+First, set a Hotkey using the Roam Research Settings menu. Then, simply select a word by double-clicking or shift-dragging over it. Then, use your Hotkey to retrieve the definitions.
 
 ![definitions](https://user-images.githubusercontent.com/6857790/209282317-890554a7-a8f7-460e-99d0-085c14cbe9e0.gif)
 
