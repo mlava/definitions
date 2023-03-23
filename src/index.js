@@ -39,7 +39,7 @@ export default {
             }
         }
 
-        window.roamAlphaAPI.ui.commandPalette.addCommand({
+        extensionAPI.ui.commandPalette.addCommand({
             label: "Get definition for selected word",
             callback: () => {
                 fetchWord()
@@ -249,9 +249,7 @@ export default {
         }
     },
     onunload: () => {
-        window.roamAlphaAPI.ui.commandPalette.removeCommand({
-            label: 'Get definition for selected word'
-        });
+        // nothing left here
     }
 }
 
