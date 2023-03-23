@@ -1,6 +1,4 @@
 import iziToast from "izitoast";
-
-var keyEventHandler;
 var wordSaveToGraph = false;
 
 export default {
@@ -42,13 +40,6 @@ export default {
         extensionAPI.ui.commandPalette.addCommand({
             label: "Get definition for selected word",
             callback: () => {
-                fetchWord()
-            },
-        });
-
-        keyEventHandler = async function (e) {
-            if (e.code === 'KeyD' && e.shiftKey && e.altKey) {
-                e.preventDefault();
                 const uid = window.roamAlphaAPI.ui.getFocusedBlock()?.["block-uid"];
                 var selectedText = '';
                 if (window.getSelection) {
@@ -62,9 +53,8 @@ export default {
                 if (word.length > 0) {
                     return fetchWord(word, uid);
                 }
-            }
-        }
-        window.addEventListener('keydown', keyEventHandler, false);
+            },
+        });
 
         async function fetchWord(word, uid) {
             var rAPIkey, key;
