@@ -50,7 +50,6 @@ export default {
                     selectedText = document.selection.createRange().text;
                 } else return;
                 var word = selectedText.toString().trim();
-                console.info(word);
                 if (word.length > 0) {
                     return fetchWord(word, uid);
                 }
