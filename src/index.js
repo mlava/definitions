@@ -50,6 +50,7 @@ export default {
                     selectedText = document.selection.createRange().text;
                 } else return;
                 var word = selectedText.toString().trim();
+                console.info(word);
                 if (word.length > 0) {
                     return fetchWord(word, uid);
                 }
@@ -160,6 +161,7 @@ export default {
                                         drag: false,
                                         timeout: false,
                                         close: true,
+                                        class: 'definitions',
                                         icon: '',
                                         overlay: true,
                                         displayMode: 2,
@@ -222,6 +224,7 @@ export default {
                                 message: 'There are no definitions available for this word!',
                                 position: 'center',
                                 close: false,
+                                class: 'definitions',
                                 timeout: 5000,
                                 closeOnClick: true,
                                 displayMode: 2
